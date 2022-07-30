@@ -69,14 +69,30 @@ nav ul li {
     nav ul li {
       /* width:auto; */
       z-index: -2;
-    }
+background-color: #000;    }
     
     nav ul li a{
 padding-right: 0;    }
-    nav ul li:hover {
+
+  nav ul li:hover {
       box-shadow: #4df 0px 0px 20px 2px;
       text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
     }
+    nav ul li.red{
+      padding-right: 0; 
+      box-shadow: none;}
+      nav ul li.red::before{
+        position: absolute;
+        content:"";
+        
+      box-shadow: 4px 0 15px #F00 ;        /* left: 0; */
+        width: 10px;
+        height: 35px;
+        /* color:#F00; */
+        /* background-color: #F00; */
+        z-index: 10;
+      }
+
     nav ul li:hover {
       width: 0;
       padding: 0px 16px 0px 0px;
