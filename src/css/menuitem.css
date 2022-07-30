@@ -1,4 +1,4 @@
-nav ul li {
+.menuItem {
   background: #ecfcff;
     box-shadow: #4df 0px 0px 0px 2px;
     font-size: 1.75em;
@@ -10,93 +10,75 @@ nav ul li {
     border-radius: 0px 100px 100px 0px;
     transition: width 0.2s ease, padding 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
   }
-  nav ul li:hover {
+  .menuItem:hover {
     box-shadow: #4df 0px 0px 20px 2px;
     text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
-  }
-  nav ul li:hover {
     width: 100%;
     padding: 0px 16px 0px 0px;
     color: black;
   }
-  nav ul li a {
+
+  .menuItem a {
     display: block;
     text-decoration: none;
     width: 300px;
     color: inherit;
     padding-left: 16px;
   }
-  nav ul li button {
+  .menuItem button {
     display: block;
     text-decoration: none;
     width: 300px;
     color: inherit;
     padding-left: 16px;
   }
-  nav ul li.green {
+  .menuItem.green {
     background: #e6ffe6;
     box-shadow: #0F0 0px 0px 0px 2px;
   }
-  nav ul li.green:hover {
+  .menuItem.green:hover {
     box-shadow: #0F0 0px 0px 20px 2px;
     text-shadow: #0F0 0px 0px 6px, #0F0 0px 0px 10px;
   }
-  nav ul li.red {
+  .menuItem.red {
     background: #ffe6e6;
     box-shadow: #F00 0px 0px 0px 2px;
   }
-  nav ul li.red:hover {
+  .menuItem.red:hover {
     box-shadow: #F00 0px 0px 20px 2px;
     text-shadow: #F00 0px 0px 6px, #F00 0px 0px 10px;
   }
-  nav ul li.purple {
+  .menuItem.purple {
     background: #fae6fa;
     box-shadow: #c0c 0px 0px 0px 2px;
   }
-  nav ul li.purple:hover {
+  .menuItem.purple:hover {
     box-shadow: #c0c 0px 0px 20px 2px;
     text-shadow: #c0c 0px 0px 6px, #c0c 0px 0px 10px;
   }
-  nav ul li.yellow {
+  .menuItem.yellow {
     background: #ffffe6;
     box-shadow: #FF0 0px 0px 0px 2px;
   }
-  nav ul li.yellow:hover {
+  .menuItem.yellow:hover {
     box-shadow: #FF0 0px 0px 20px 2px;
     text-shadow: #FF0 0px 0px 6px, #FF0 0px 0px 10px;
   }
   @media (min-width: 992px) { 
-    nav ul li {
-      /* width:auto; */
-      z-index: -2;
-background-color: #000;    }
+    .menuItem { 
+      width:0;
+    } 
     
-    nav ul li a{
-padding-right: 0;    }
+    .menuItem a{
+padding-right: 0;
+ }
 
-  nav ul li:hover {
+  .menuItem:hover {
+    width: 0;
+    color: #f6f6f6;
       box-shadow: #4df 0px 0px 20px 2px;
       text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
-    }
-    nav ul li.red{
-      padding-right: 0; 
-      box-shadow: none;}
-      nav ul li.red::before{
-        position: absolute;
-        content:"";
-        
-      box-shadow: 4px 0 15px #F00 ;        /* left: 0; */
-        width: 10px;
-        height: 35px;
-        /* color:#F00; */
-        /* background-color: #F00; */
-        z-index: 10;
-      }
 
-    nav ul li:hover {
-      width: 0;
-      padding: 0px 16px 0px 0px;
-      color: black;
     }
-  
+    
 }

@@ -3,12 +3,17 @@ import Hamburguesa from "./componentes/hamburguesa";
 import Navegador from "./componentes/navegador.jsx";
 import React, { useState } from "react";
 import MenuItem from "./componentes/menuitem";
+import SubMenu from "./componentes/submenu";
 
 function App() {
   const [estadoVisible, cambiarVisibilidad] = useState(false);
+  const [visibilidadJedi,cambiarVisibilidadJedi]=useState(false)
   const hamburguesaClick = () => {
     estadoVisible ? cambiarVisibilidad(false) : cambiarVisibilidad(true);
   };
+  const clickJedi=()=>{
+    visibilidadJedi ? cambiarVisibilidadJedi(false) : cambiarVisibilidadJedi(true)
+  }
   return (
     <div className="App">
       <Hamburguesa manejarClick={hamburguesaClick} visible={estadoVisible} />
@@ -19,12 +24,19 @@ function App() {
         <MenuItem href="#" color="ninguno">
           Home
         </MenuItem>
-        <MenuItem href="#" color="green">
+        <MenuItem href={clickJedi} color="green" >
           Jedi
-        </MenuItem>
-        <MenuItem href="#" color="red">
-          Sith
-        </MenuItem>
+          
+</MenuItem>
+          <SubMenu texto='nada' href="#" color="red" visible={visibilidadJedi}>
+          
+          <MenuItem href='#' color ='green' >Qui Gon Jin</MenuItem>
+          <MenuItem href='#' color ='green' >Obi Wan Kenobi</MenuItem>
+        </SubMenu>
+        
+
+          
+        
         <MenuItem href="#" color="yellow">
           Sentinel
         </MenuItem>

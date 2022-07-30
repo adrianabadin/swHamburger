@@ -1,5 +1,5 @@
 
-nav {
+.menu {
     font-family: Open Sans;
     color: white;
     background: #111;
@@ -12,23 +12,25 @@ nav {
     width: 300px;
     height: 100%;
   }
-  nav.show {
+  .menu.show {
     transform: translatex(0%);
   }
-  nav ul {
+  .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   @media (min-width: 992px) { 
-    nav{display: flex;
+    .menu{display: flex;
       padding: 0;
       justify-content: center;
       position: static;
       left: 0;
       width: 100%;
+      transform: translatex(0%);
+
     }
-    nav ul{
+    .menu ul{
       width: 100vw !important;
       position: relative;
       padding: 0px;

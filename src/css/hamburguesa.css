@@ -7,7 +7,7 @@ html, body {
   box-sizing: border-box;
 }
 
-#container {
+.contenedorHamburguesa {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -15,7 +15,7 @@ html, body {
   left: 0%;
 }
 
-#burger {
+.hamburguesa {
   cursor: pointer;
   opacity: 0;
   -webkit-animation: fadein 0.2s ease 1s forwards;
@@ -25,7 +25,7 @@ html, body {
   width: 100%;
   height: 100%;
 }
-#burger .filling, #burger .bun {
+.hamburguesa .filling, .hamburguesa .bun {
   display: block;
   position: absolute;
   left: 50%;
@@ -35,7 +35,7 @@ html, body {
   transform-origin: 50% 50%;
   transition: top 0.4s ease 0.4s, transform 0.4s ease 0.4s;
 }
-#burger .filling:before, #burger .bun:before, #burger .filling:after, #burger .bun:after {
+.hamburguesa .filling:before, .hamburguesa .bun:before, .hamburguesa .filling:after, .hamburguesa .bun:after {
   content: "";
   display: block;
   height: 40%;
@@ -45,51 +45,51 @@ html, body {
   transform: translate(0%, -45%);
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
-#burger .filling:before, #burger .bun:before {
+.hamburguesa .filling:before, .hamburguesa .bun:before {
   left: 0;
   width: calc(-1px + 75%);
   border-radius: 10px 0px 0px 10px;
 }
-#burger .filling:after, #burger .bun:after {
+.hamburguesa .filling:after, .hamburguesa .bun:after {
   right: 0;
   width: calc(-1px + 25%);
 }
-#burger:hover .bun.top:before {
+.hamburguesa:hover .bun.top:before {
   background: #FEE;
   box-shadow: #F00 0px 0px 10px 1px;
 }
-#burger:hover .bun.bottom:before {
+.hamburguesa:hover .bun.bottom:before {
   background: #DFF;
   box-shadow: #0FF 0px 0px 10px 1px;
 }
-#burger:hover .filling:before {
+.hamburguesa:hover .filling:before {
   background: #EFE;
   box-shadow: #0F0 0px 0px 10px 1px;
 }
-#burger .bun.top {
+.hamburguesa .bun.top {
   top: 25%;
 }
-#burger .bun.bottom {
+.hamburguesa .bun.bottom {
   top: 75%;
 }
-#burger .filling {
+.hamburguesa .filling {
   top: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
   -webkit-animation: green-ls-out 0.8s ease forwards;
           animation: green-ls-out 0.8s ease forwards;
 }
-#burger.active .bun {
+.hamburguesa.active .bun {
   border-radius: 3px;
   top: 50%;
   transition: top 0.4s ease, transform 0.4s ease;
 }
-#burger.active .bun.top {
+.hamburguesa.active .bun.top {
   transform: translate(-50%, -50%) rotate(-225deg);
 }
-#burger.active .bun.bottom {
+.hamburguesa.active .bun.bottom {
   transform: translate(-50%, -50%) rotate(405deg);
 }
-#burger.active .filling {
+.hamburguesa.active .filling {
   transform: translate(-50%, -50%) rotate(-90deg);
   -webkit-animation: green-ls-in 0.8s ease forwards;
           animation: green-ls-in 0.8s ease forwards;
@@ -155,4 +155,11 @@ html, body {
     to {
       Opacity: 1;
     }
+  }
+  @media (min-width: 992px) { 
+.contenedorHamburguesa{
+  opacity: 0;
+  z-index: -5;
+}
+
   }

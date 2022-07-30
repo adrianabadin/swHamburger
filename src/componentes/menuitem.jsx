@@ -3,9 +3,9 @@ import '../css/menuitem.css'
 function MenuItem(props){
     
     return (
-    <li className={props.color}>
+    <li className={`menuItem ${props.color}`} onClick={(typeof props.href === 'function')? props.href :'{}'}>
         <a href={props.href} >
-            {props.children  }
+            {props.children}
         </a>
     </li>
    ) 
