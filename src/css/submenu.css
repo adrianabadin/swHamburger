@@ -22,3 +22,20 @@ opacity: 1;
     transform: scale(0.8);
 
 }
+.subMenuContainer{
+    position: relative;
+}
+@media (min-width: 992px) { 
+    .subMenu{
+        display: block !important;
+        flex-direction: column;
+        flex: 1 1;
+        position: absolute !important;
+    min-height: 100px;
+    height: auto;
+    width: 300px;
+    background-color: #000;
+
+    }
+    
+}
