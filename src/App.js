@@ -24,11 +24,8 @@ function App() {
         <MenuItem href="#" color="ninguno">
           Home
         </MenuItem>
-        <MenuItem href={clickJedi} color="green" >
-          Jedi
-          
-</MenuItem>
-          <SubMenu texto='nada' href="#" color="red" visible={visibilidadJedi}>
+      
+          <SubMenu subMenuTitle="Jedi" href={clickJedi} color="green" visible={visibilidadJedi}>
           
           <MenuItem href='#' color ='green' >Qui Gon Jin</MenuItem>
           <MenuItem href='#' color ='green' >Obi Wan Kenobi</MenuItem>

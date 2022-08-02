@@ -18,6 +18,44 @@
     color: black;
   }
 
+  .SubMenuItem {
+    background: #ecfcff;
+      box-shadow: #4df 0px 0px 0px 2px;
+      font-size: 1.75em;
+      line-height: 1.25em;
+      padding: 0px;
+      padding-left: 0px;
+      margin: 16px 0px;
+      width: 0;
+      border-radius: 0px 100px 100px 0px;
+      transition: width 0.2s ease, padding 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+    }
+    .SubMenuItem:hover {
+      box-shadow: #4df 0px 0px 20px 2px;
+      text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
+      padding: 0px 16px 0px 0px;
+      color: black;
+    }
+
+    .SubMenuItem a {
+      display: block;
+      text-decoration: none;
+      width: 300px;
+      color: inherit;
+      padding-left: 16px;
+    }
+    .SubMenuItem button {
+      display: block;
+      text-decoration: none;
+      width: 300px;
+      color: inherit;
+      padding-left: 16px;
+    }
+
+
+
+
+
   .menuItem a {
     display: block;
     text-decoration: none;
@@ -32,35 +70,35 @@
     color: inherit;
     padding-left: 16px;
   }
-  .menuItem.green {
+  .green {
     background: #e6ffe6;
     box-shadow: #0F0 0px 0px 0px 2px;
   }
-  .menuItem.green:hover {
+  .green:hover {
     box-shadow: #0F0 0px 0px 20px 2px;
     text-shadow: #0F0 0px 0px 6px, #0F0 0px 0px 10px;
   }
-  .menuItem.red {
+  .red {
     background: #ffe6e6;
     box-shadow: #F00 0px 0px 0px 2px;
   }
-  .menuItem.red:hover {
+  .red:hover {
     box-shadow: #F00 0px 0px 20px 2px;
     text-shadow: #F00 0px 0px 6px, #F00 0px 0px 10px;
   }
-  .menuItem.purple {
+  .purple {
     background: #fae6fa;
     box-shadow: #c0c 0px 0px 0px 2px;
   }
-  .menuItem.purple:hover {
+  .purple:hover {
     box-shadow: #c0c 0px 0px 20px 2px;
     text-shadow: #c0c 0px 0px 6px, #c0c 0px 0px 10px;
   }
-  .menuItem.yellow {
+  .yellow {
     background: #ffffe6;
     box-shadow: #FF0 0px 0px 0px 2px;
   }
-  .menuItem.yellow:hover {
+  .yellow:hover {
     box-shadow: #FF0 0px 0px 20px 2px;
     text-shadow: #FF0 0px 0px 6px, #FF0 0px 0px 10px;
   }
