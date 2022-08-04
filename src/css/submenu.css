@@ -1,41 +1,52 @@
-.menu .subMenu{
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-align-content: flex-start;
-height: 100%;
+.menu .subMenu {
+    display: none;
     transform: translateY(-200%);
     opacity: 0;
-transition: all ease 0.7s;
-margin: 1rem;
-position: absolute;
+    transition: all ease 0.7s;
+    margin: 1rem;
+    position: absolute;
 }
-.subMenu.show{
-    position: static;
 
-transform: translateY(0%);
-opacity: 1;
+.subMenu.show {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    transform: translateY(0%);
+    opacity: 1;
 }
-.subMenu >.menuitem{
+
+.subMenu .menuitem {
     transform: scale(0.8);
 
 }
-.subMenuContainer{
+
+.subMenuContainer {
     position: relative;
+    margin: 0;
+    height: auto;
+    min-height: 100px;
 }
-@media (min-width: 992px) { 
-    .subMenu{
+
+@media (min-width: 992px) {
+    .subMenu {
         display: block !important;
         flex-direction: column;
         flex: 1 1;
         position: absolute !important;
-    min-height: 100px;
-    height: auto;
-    width: 300px;
-    background-color: #000;
+        min-height: 100px;
+        height: auto;
+        width: 300px;
+        background-color: #000;
 
     }
-    
+
+    .menu .subMenu {
+        margin: 0;
+        padding: 1rem;
+    }
 }

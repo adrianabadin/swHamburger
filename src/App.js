@@ -7,13 +7,15 @@ import SubMenu from "./componentes/submenu";
 
 function App() {
   const [estadoVisible, cambiarVisibilidad] = useState(false);
-  const [visibilidadJedi,cambiarVisibilidadJedi]=useState(false)
+  const [visibilidadJedi, cambiarVisibilidadJedi] = useState(false);
   const hamburguesaClick = () => {
     estadoVisible ? cambiarVisibilidad(false) : cambiarVisibilidad(true);
   };
-  const clickJedi=()=>{
-    visibilidadJedi ? cambiarVisibilidadJedi(false) : cambiarVisibilidadJedi(true)
-  }
+  const clickJedi = () => {
+    visibilidadJedi
+      ? cambiarVisibilidadJedi(false)
+      : cambiarVisibilidadJedi(true);
+  };
   return (
     <div className="App">
       <Hamburguesa manejarClick={hamburguesaClick} visible={estadoVisible} />
@@ -24,16 +26,20 @@ function App() {
         <MenuItem href="#" color="ninguno">
           Home
         </MenuItem>
-      
-          <SubMenu subMenuTitle="Jedi" href={clickJedi} color="green" visible={visibilidadJedi}>
-          
-          <MenuItem href='#' color ='green' >Qui Gon Jin</MenuItem>
-          <MenuItem href='#' color ='green' >Obi Wan Kenobi</MenuItem>
-        </SubMenu>
-        
 
-          
-        
+        <SubMenu
+          subMenuTitle="Jedi"
+          href={clickJedi}
+          color="green"
+          visible={visibilidadJedi}
+        >
+          <MenuItem href="#" color="green">
+            Qui Gon Jin
+          </MenuItem>
+          <MenuItem href="#" color="green">
+            Obi Wan Kenobi
+          </MenuItem>
+        </SubMenu>
         <MenuItem href="#" color="yellow">
           Sentinel
         </MenuItem>
