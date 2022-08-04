@@ -1,14 +1,8 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import "../css/menuitem.css";
 function MenuItem(props) {
   let divInterno = useRef();
-  //   const [ancho, setAncho] = useState("300px");
-  //   const referencia = divInterno.current;
   let divExterno = useRef();
-  //   const igualarAnchos = () => {
-  //     setAncho(divInterno.current.offsetWidth.toString() + "px");
-  //     divExterno.current.style.width = ancho;
-  //     };
   window.addEventListener("resize", cambioDePantalla);
   function cambioDePantalla() {
     try {
@@ -24,10 +18,6 @@ function MenuItem(props) {
   }
 
   useEffect(() => cambioDePantalla());
-  //   divExterno.current.style.width = "250px";
-  //= divInterno.current.offsetWidth;
-
-  //www.iteramos.com/pregunta/90113/como-obtener-el-ancho-de-un-elemento-de-reaccion
   return (
     <div className="menuitem-externo" ref={divExterno}>
       <li
