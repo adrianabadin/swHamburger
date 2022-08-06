@@ -1,5 +1,7 @@
 # STAR WARS REACT RESPONSIVE MENU
-This proyect builds a responsive header component builded upon css hamburguer menu of Adam D (https://codepen.io/Naito/pen/pgyOVm)
+This proyect builds a responsive header component designed upon css hamburguer menu of Adam D (https://codepen.io/Naito/pen/pgyOVm)
+**DEMO**
+(https://starwarsmenu.000webhostapp.com/)
 
 ## Configuring the menu
 

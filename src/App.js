@@ -24,7 +24,7 @@ function App() {
       <Hamburguesa manejarClick={hamburguesaClick} visible={estadoVisible} />
       <Navegador visibilidad={estadoVisible}>
         <MenuItem href="#" color="red">
-          Adrian
+          Sith
         </MenuItem>
         <MenuItem href="#" color="ninguno">
           Home
