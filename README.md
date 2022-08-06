@@ -9,7 +9,7 @@ This proyect builds a responsive header component builded upon css hamburguer me
 * href: Link to a page or function to handle the click event
 * color: define the color linked to the lightsaber menu item 
     posible colors are : 
-        **red**
+       > **red**
         **yellow**
         **green**
         **red**
