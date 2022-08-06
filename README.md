@@ -28,7 +28,8 @@ This proyect builds a responsive header component designed upon css hamburguer m
        **default [cyan]**
 * subMenuTitle: Texto del item que abre el submenu
 
-
+# Install dependencies
+**npm install**
 
 # Getting Started with Create React App
 
