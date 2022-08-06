@@ -1,29 +1,29 @@
-## STAR WARS REACT RESPONSIVE MENU
+# STAR WARS REACT RESPONSIVE MENU
 This proyect builds a responsive header component builded upon css hamburguer menu of Adam D (https://codepen.io/Naito/pen/pgyOVm)
 
 ## Configuring the menu
 
-# MenuItem element: 
-(Props)
+### MenuItem element: 
+#### Props
 
 * href: Link to a page or function to handle the click event
 * color: define the color linked to the lightsaber menu item 
     posible colors are : 
-        [red]
-        [yellow]
-        [green]
-        [red]
-        [default] =cyan
+        * red
+        * yellow
+        * green
+        * red
+        * default =cyan
 
-# SubMenu element
+### SubMenu element
 * href: Link to a page or function to handle the click event
 * color: define the color linked to the lightsaber menu item 
     posible colors are : 
-        [red]
-        [yellow]
-        [green]
-        [red]
-        [default] =cyan
+        * red
+        * yellow
+        * green
+        * red
+        * default =cyan
 * subMenuTitle: Texto del item que abre el submenu
 
 
