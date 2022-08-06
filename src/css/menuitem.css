@@ -63,8 +63,10 @@
   color: inherit;
   padding-left: 16px;
 }
-
-.SubMenuItem button {
+.SubMenuItem >div{
+  width: 300px;
+}
+.SubMenuItem >div >button  {
   display: block;
   text-decoration: none;
   width: 300px;
@@ -154,6 +156,7 @@
 @media (min-width: 992px) {
   .menuItem {
     width: 0;
+    font-size: 22px;
   }
 
   .menuItem a {
@@ -172,8 +175,16 @@
     text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px; */
 
   }
-
-  */ .subMenu .menuItem:hover {
+.SubMenuItem >div >button{
+  width: fit-content;
+}
+.SubMenuItem >div {
+  width: fit-content;
+}
+.subMenu .boton-contenedor{
+  width: 260px;
+}
+  .subMenu .menuItem:hover {
     width: 100% !important;
     color: #333;
   }

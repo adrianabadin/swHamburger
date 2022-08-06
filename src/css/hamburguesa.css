@@ -10,7 +10,7 @@ html, body {
 .contenedorHamburguesa {
   width: 80px;
   height: 80px;
-  position: absolute;
+  position: static;
   top: 0%;
   left: 0%;
 }

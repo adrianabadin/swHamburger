@@ -38,9 +38,9 @@
     width: 100% !important;
     position: relative;
     padding: 0px;
+    margin: 0;
     display: flex;
     position: static;
-    flex: 0.7 0.7;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;

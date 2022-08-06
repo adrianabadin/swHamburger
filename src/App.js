@@ -4,6 +4,7 @@ import Navegador from "./componentes/navegador.jsx";
 import React, { useState } from "react";
 import MenuItem from "./componentes/menuitem";
 import SubMenu from "./componentes/submenu";
+import Header from "./componentes/header";
 
 function App() {
   const [estadoVisible, cambiarVisibilidad] = useState(false);
@@ -17,7 +18,9 @@ function App() {
       : cambiarVisibilidadJedi(true);
   };
   return (
+
     <div className="App">
+    <Header>
       <Hamburguesa manejarClick={hamburguesaClick} visible={estadoVisible} />
       <Navegador visibilidad={estadoVisible}>
         <MenuItem href="#" color="red">
@@ -47,6 +50,7 @@ function App() {
           Samuel L. Jackson
         </MenuItem>
       </Navegador>
+      </Header>
     </div>
   );
 }

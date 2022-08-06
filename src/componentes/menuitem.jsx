@@ -10,7 +10,7 @@ function MenuItem(props) {
       const ancho = divInterno.current.clientWidth || false;
 
       if (ventana > 992 && ancho !== false) {
-        divExterno.current.style.width = ancho + "px";
+        divExterno.current.style.width = ancho + 10+ "px";
       } else {
         divExterno.current.style.width = "300px";
       }

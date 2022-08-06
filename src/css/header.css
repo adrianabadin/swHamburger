@@ -1,0 +1,22 @@
+header{
+    background-color: #111;
+    height: fit-content;
+    padding: 5px 10px 5px 15px;
+    
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+}
+header > div{
+    height: fit-content;
+}
+header > div >img {
+    padding: 10px;
+    height: 100px;
+}
+header >.final{
+    float: right;
+}
